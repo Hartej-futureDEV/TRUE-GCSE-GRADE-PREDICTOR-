@@ -1,0 +1,201 @@
+{
+  "mathsF": {
+    "display_name": "Maths Foundation",
+    "thresholds": [
+      {"min": 186, "grade": "Grade 5 (max)"},
+      {"min": 157, "grade": "Grade 4-5"},
+      {"min": 117, "grade": "Grade 3-4"},
+      {"min": 77, "grade": "Grade 2-3"},
+      {"min": 37, "grade": "Grade 1-2"}
+    ],
+    "below": "Below Grade 1"
+  },
+  "mathsH": {
+    "display_name": "Maths Higher",
+    "thresholds": [
+      {"min": 219, "grade": "Grade 9"},
+      {"min": 191, "grade": "Grade 8"},
+      {"min": 163, "grade": "Grade 7"},
+      {"min": 129, "grade": "Grade 6"},
+      {"min": 95, "grade": "Grade 5"},
+      {"min": 61, "grade": "Grade 4"},
+      {"min": 44, "grade": "Grade 3"}
+    ],
+    "below": "Below Grade 3"
+  },
+  "englishL": {
+    "display_name": "English Language",
+    "thresholds": [
+      {"min": 138, "grade": "Grade 9"},
+      {"min": 125, "grade": "Grade 8"},
+      {"min": 112, "grade": "Grade 7"},
+      {"min": 102, "grade": "Grade 6"},
+      {"min": 92, "grade": "Grade 5"},
+      {"min": 82, "grade": "Grade 4"},
+      {"min": 73, "grade": "Grade 3"}
+    ],
+    "below": "Below Grade 3"
+  },
+  "englishLit": {
+    "display_name": "English Literature",
+    "thresholds": [
+      {"min": 137, "grade": "Grade 9"},
+      {"min": 121, "grade": "Grade 8"},
+      {"min": 106, "grade": "Grade 7"},
+      {"min": 90, "grade": "Grade 6"},
+      {"min": 74, "grade": "Grade 5"},
+      {"min": 58, "grade": "Grade 4"},
+      {"min": 42, "grade": "Grade 3"},
+      {"min": 27, "grade": "Grade 2"},
+      {"min": 12, "grade": "Grade 1"}
+    ],
+    "below": "Below Grade 1"
+  },
+  "scienceF": {
+    "display_name": "Combined Science Foundation",
+    "thresholds": [
+      {"min": 234, "grade": "Grade 5"},
+      {"min": 204, "grade": "Grade 4"},
+      {"min": 174, "grade": "Grade 3"},
+      {"min": 144, "grade": "Grade 2"},
+      {"min": 114, "grade": "Grade 1"}
+    ],
+    "below": "Below Grade 1"
+  },
+  "scienceH": {
+    "display_name": "Combined Science Higher",
+    "thresholds": [
+      {"min": 306, "grade": "Grade 9"},
+      {"min": 270, "grade": "Grade 8"},
+      {"min": 234, "grade": "Grade 7"},
+      {"min": 198, "grade": "Grade 6"},
+      {"min": 162, "grade": "Grade 5"},
+      {"min": 126, "grade": "Grade 4"},
+      {"min": 90, "grade": "Grade 3"}
+    ],
+    "below": "Below Grade 3"
+  },
+  "biologyTriple": {
+    "display_name": "Biology Triple Science",
+    "thresholds": [
+      {"min": 180, "grade": "Grade 9"},
+      {"min": 160, "grade": "Grade 8"},
+      {"min": 140, "grade": "Grade 7"},
+      {"min": 120, "grade": "Grade 6"},
+      {"min": 100, "grade": "Grade 5"},
+      {"min": 80, "grade": "Grade 4"},
+      {"min": 60, "grade": "Grade 3"}
+    ],
+    "below": "Below Grade 3"
+  },
+  "chemistryTriple": {
+    "display_name": "Chemistry Triple Science",
+    "thresholds": [
+      {"min": 180, "grade": "Grade 9"},
+      {"min": 160, "grade": "Grade 8"},
+      {"min": 140, "grade": "Grade 7"},
+      {"min": 120, "grade": "Grade 6"},
+      {"min": 100, "grade": "Grade 5"},
+      {"min": 80, "grade": "Grade 4"},
+      {"min": 60, "grade": "Grade 3"}
+    ],
+    "below": "Below Grade 3"
+  },
+  "physicsTriple": {
+    "display_name": "Physics Triple Science",
+    "thresholds": [
+      {"min": 180, "grade": "Grade 9"},
+      {"min": 160, "grade": "Grade 8"},
+      {"min": 140, "grade": "Grade 7"},
+      {"min": 120, "grade": "Grade 6"},
+      {"min": 100, "grade": "Grade 5"},
+      {"min": 80, "grade": "Grade 4"},
+      {"min": 60, "grade": "Grade 3"}
+    ],
+    "below": "Below Grade 3"
+  },
+  "history": {
+    "display_name": "History",
+    "thresholds": [
+      {"min": 117, "grade": "Grade 9"},
+      {"min": 105, "grade": "Grade 8"},
+      {"min": 93, "grade": "Grade 7"},
+      {"min": 81, "grade": "Grade 6"},
+      {"min": 69, "grade": "Grade 5"},
+      {"min": 57, "grade": "Grade 4"},
+      {"min": 40, "grade": "Grade 3"},
+      {"min": 24, "grade": "Grade 2"},
+      {"min": 8, "grade": "Grade 1"}
+    ],
+    "below": "Below Grade 1"
+  },
+  "geography": {
+    "display_name": "Geography",
+    "thresholds": [
+      {"min": 202, "grade": "Grade 9"},
+      {"min": 182, "grade": "Grade 8"},
+      {"min": 162, "grade": "Grade 7"},
+      {"min": 142, "grade": "Grade 6"},
+      {"min": 123, "grade": "Grade 5"},
+      {"min": 104, "grade": "Grade 4"},
+      {"min": 76, "grade": "Grade 3"},
+      {"min": 48, "grade": "Grade 2"},
+      {"min": 20, "grade": "Grade 1"}
+    ],
+    "below": "Below Grade 1"
+  },
+  "CS": {
+    "display_name": "Computer Science",
+    "thresholds": [
+      {"min": 144, "grade": "Grade 9"},
+      {"min": 128, "grade": "Grade 8"},
+      {"min": 112, "grade": "Grade 7"},
+      {"min": 96, "grade": "Grade 6"},
+      {"min": 80, "grade": "Grade 5"},
+      {"min": 64, "grade": "Grade 4"},
+      {"min": 48, "grade": "Grade 3"},
+      {"min": 32, "grade": "Grade 2"},
+      {"min": 16, "grade": "Grade 1"}
+    ],
+    "below": "Below Grade 1"
+  },
+  "french": {
+    "display_name": "French",
+    "thresholds": [
+      {"min": 200, "grade": "Grade 9"},
+      {"min": 180, "grade": "Grade 8"},
+      {"min": 160, "grade": "Grade 7"},
+      {"min": 140, "grade": "Grade 6"},
+      {"min": 120, "grade": "Grade 5"},
+      {"min": 100, "grade": "Grade 4"},
+      {"min": 80, "grade": "Grade 3"}
+    ],
+    "below": "Below Grade 3"
+  },
+  "spanish": {
+    "display_name": "Spanish",
+    "thresholds": [
+      {"min": 200, "grade": "Grade 9"},
+      {"min": 180, "grade": "Grade 8"},
+      {"min": 160, "grade": "Grade 7"},
+      {"min": 140, "grade": "Grade 6"},
+      {"min": 120, "grade": "Grade 5"},
+      {"min": 100, "grade": "Grade 4"},
+      {"min": 80, "grade": "Grade 3"}
+    ],
+    "below": "Below Grade 3"
+  },
+  "german": {
+    "display_name": "German",
+    "thresholds": [
+      {"min": 200, "grade": "Grade 9"},
+      {"min": 180, "grade": "Grade 8"},
+      {"min": 160, "grade": "Grade 7"},
+      {"min": 140, "grade": "Grade 6"},
+      {"min": 120, "grade": "Grade 5"},
+      {"min": 100, "grade": "Grade 4"},
+      {"min": 80, "grade": "Grade 3"}
+    ],
+    "below": "Below Grade 3"
+  }
+}
