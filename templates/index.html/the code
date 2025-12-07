@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GCSE Grade Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>GCSE and Mock Grade Predictor</h1>
+    <form method="POST">
+        {% for subject in ["mathsF","mathsH","englishL","englishLit","scienceF","scienceH",
+                           "biologyTriple","chemistryTriple","physicsTriple","history",
+                           "geography","CS","french","spanish","german"] %}
+            <label>{{ subject.replace("_"," ").capitalize() }}:</label>
+            <input type="number" name="{{ subject }}" value="0"><br><br>
+        {% endfor %}
+        <button type="submit">Predict Grades</button>
+    </form>
+
+    {% if results %}
+        <h2>Predicted Grades:</h2>
+        <ul>
+            {% for subject, grade in results.items() %}
+                <li>{{ subject }}: {{ grade }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
