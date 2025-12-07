@@ -2,24 +2,33 @@ from flask import Flask, render_template, request
 import json
 import os
 
-app = Flask(__name__, static_folder='static', template_folder='templates')
+# Get the directory of the current file (flaskr/templates/)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# Project root is two levels up (flaskr/templates/ -> flaskr/ -> root)
+project_root = os.path.dirname(os.path.dirname(current_dir))
+
+app = Flask(__name__, 
+            static_folder='../static',
+            static_url_path='/static',
+            template_folder='.')
 
 subjects = ["mathsF","mathsH","englishL","englishLit","scienceF","scienceH",
                            "biologyTriple","chemistryTriple","physicsTriple","history",
                            "geography","CS","french","spanish","german"]
 
 def load_boundaries():
-    base = os.path.dirname(__file__)
-    path = os.path.join(base, 'boundaries.json')
+    # boundaries.json is in the project root
+    boundaries_path = os.path.join(project_root, 'boundaries.json')
     try:
-        with open(path, 'r', encoding='utf-8') as f:
+        with open(boundaries_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             # ensure thresholds are sorted descending by min
             for v in data.values():
                 if isinstance(v, dict) and 'thresholds' in v:
                     v['thresholds'].sort(key=lambda t: t.get('min', 0), reverse=True)
             return data
-    except Exception:
+    except Exception as e:
+        print(f"Error loading boundaries.json from {boundaries_path}: {e}")
         return {}
 
 

@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html>
-<title>GCSE Grade Predictor</title>
-<link rel="stylesheet" href="style.css">
-<nav>
-    <h1>GCSE and Mock Grade Predictor</h1>
-    <ol>
-        <li>MathsF</li>
-        <li>MathsH</li>
-        <li>englishL</li>
-        <li>englishH</li>
-        <li>scienceF</li>
-        <li>physicsTriple</li>
-        <li>biologyTriple</li>
-        <li>chemistryTriple</li>
-        <li>scienceH</li>
-        <li>geography</li>
-        <li>history</li>
-        <li>CS</li>
-        <li>french</li>
-        <li>spanish</li>
-        <li>german</li>
-    </ol>
-    <form method="POST">
-            <label for "subjects">Choose your subjects: </label><br><br>
-            <select subject="subjects"
-        {% endfor %}
-        <button type="submit">Predict Grades</button>
-    </form>
+<head>
+    <title>GCSE Grade Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>GCSE and Mock Grade Predictor</h1>
+        <form method="POST" action="/">
+            <div class="form-group">
+                <label>Enter your scores:</label>
+                <div id="inputContainer"></div>
+            </div>
+            <button type="submit">Predict Grades</button>
+        </form>
 
-    {% if results %}
-        <h2>Predicted Grades:</h2>
-        <ul>
-            {% for subject, grade in results.items() %}
-                <li>{{ subject }}: {{ grade }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-</nav>
+        {% if results %}
+            <h2>Predicted Grades:</h2>
+            <ul class="results">
+                {% for subject, grade in results.items() %}
+                    <li><strong>{{ subject }}:</strong> {{ grade }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
 </html>
