@@ -1,3 +1,8 @@
+# Author: HARTEJ SINGH PANNU
+# Original creator of this API
+# 2025
+
+
 print("This is the GCSE and mock grade predictor.")
 print("It will ask for your previous grades from mocks and school reports in Year 10 and Year 11.")
 print("Just a reminder: nothing here is 100% accurate. It is merely a prediction.")
