@@ -9,8 +9,11 @@
         <h1>GCSE and Mock Grade Predictor</h1>
         <form method="POST" action="/">
             <div class="form-group">
-                <label>Enter your scores:</label>
+                <label>Enter your scores: the sum of all your mock exam scores for each subject</label>
                 <div id="inputContainer"></div>
+                <div id="subject-container"></div>
+                <div class="form-group">
+                    <button type="button" id="addSubjectBtn">Add Subject</button>
             </div>
             <button type="submit">Predict Grades</button>
         </form>

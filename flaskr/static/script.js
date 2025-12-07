@@ -40,3 +40,13 @@ subjects.forEach(subject => {
   div.appendChild(input);
   inputContainer.appendChild(div);
 });
+const row = document.createElement("div");
+const checkbox = document.createElement("input");
+checkbox.type = "checkbox";
+checkbox.id = subject + "-check";
+const label = document.createElement("label");
+lebel.textContent = subject;
+label.htmlFor = checkbox.id;
+row.appendChild(checkbox);
+row.appendChild(label);
+inputContainer.appendChild(row);

@@ -11,7 +11,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #000000;
 }
 
 h2 {
@@ -71,7 +71,7 @@ form {
 button {
     width: 100%;
     padding: 12px 20px;
-    background-color: #4CAF50;
+    background-color: #1aff00;
     color: white;
     border: none;
     border-radius: 5px;
