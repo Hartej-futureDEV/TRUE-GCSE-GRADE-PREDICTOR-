@@ -1,4 +1,4 @@
-// List of all subjects matching the boundaries.json keys
+// List of all subjects
 const subjects = [
   { key: 'mathsF', display: 'Maths Foundation' },
   { key: 'mathsH', display: 'Maths Higher' },
@@ -17,38 +17,46 @@ const subjects = [
   { key: 'german', display: 'German' }
 ];
 
-// Get the container where inputs will be added
-const inputContainer = document.getElementById('inputContainer');
+// Containers
+const inputContainer = document.getElementById("inputContainer");
+const checkboxContainer = document.getElementById("checkboxContainer");
 
-// Create input fields for each subject
+// Input fields
 subjects.forEach(subject => {
   const div = document.createElement('div');
   div.className = 'input-row';
   
   const label = document.createElement('label');
-  label.textContent = subject.display + ':';
+  label.textContent = subject.display + ":";
   label.htmlFor = subject.key;
-  
+
   const input = document.createElement('input');
   input.type = 'number';
   input.name = subject.key;
   input.id = subject.key;
   input.placeholder = 'Enter score';
-  input.min = '0';
-  
+
   div.appendChild(label);
   div.appendChild(input);
   inputContainer.appendChild(div);
 });
+
+// Checkboxes
 subjects.forEach(subject => {
-const row = document.createElement("div");
-const checkbox = document.createElement("input");
-checkbox.type = "checkbox";
-checkbox.id = subject + "-check";
-const label = document.createElement("label");
-label.textContent = subject;
-label.htmlFor = checkbox.id;
-row.appendChild(checkbox);
-row.appendChild(label);
-inputContainer.appendChild(row);
+  const row = document.createElement("div");
+  row.className = "checkbox-row";
+
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.className = "subject-checkbox";
+  checkbox.id = subject.key + "-check";
+  checkbox.value = subject.key;
+
+  const label = document.createElement("label");
+  label.textContent = subject.display;
+  label.htmlFor = checkbox.id;
+
+  row.appendChild(checkbox);
+  row.appendChild(label);
+  checkboxContainer.appendChild(row);
 });

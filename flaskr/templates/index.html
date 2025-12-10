@@ -7,18 +7,26 @@
 <body>
     <div class="container">
         <h1>GCSE and Mock Grade Predictor</h1>
+
         <form method="POST" action="/">
+
+            <!-- SUBJECT INPUTS -->
             <div class="form-group">
                 <label>Enter your scores: the sum of all your mock exam scores for each subject</label>
+
                 <div id="inputContainer"></div>
-                <button type="checkbox" id="add-subject">Add Subject</button>
+
+                <!-- This is a button. NOT a checkbox. -->
+                <button type="button" id="add-subject">Add Subject</button>
             </div>
+
+            <!-- CHECKBOXES FOR SUBJECT SELECTION -->
+            <div class="form-group">
+                <label>Select subjects:</label>
+                <div id="checkboxContainer"></div>
             </div>
-                <div class="form-group">
-                    <div id="checkboxContainer">
-                </div>
-                </div>
-            <button type = "checkbox" id="subject-check"> </button>
+
+            <!-- Correct submit button -->
             <button type="submit">Predict Grades</button>
         </form>
 
@@ -31,6 +39,7 @@
             </ul>
         {% endif %}
     </div>
+
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
