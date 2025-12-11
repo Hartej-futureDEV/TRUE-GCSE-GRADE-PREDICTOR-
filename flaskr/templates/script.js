@@ -16,7 +16,7 @@ const subjects = [
   { key: 'spanish', display: 'Spanish' },
   { key: 'german', display: 'German' }
 ];
-
+// note to self - change the order of rhe container and input fields and fix funtionality of the checkboxes 
 // Get the container where inputs will be added
 const inputContainer = document.getElementById('inputContainer');
 
